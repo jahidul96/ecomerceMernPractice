@@ -1,0 +1,192 @@
+.headDiv {
+    background-color: #333;
+    margin-top: 20px;
+
+}
+
+.headDiv>h3 {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.emptyCartStyle {
+    background-color: red;
+
+}
+
+.emptyCartStyle>h4 {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.buynowButton {
+    background-color: #fff;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.topTitleDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.flexDivWidth {
+    flex: 1;
+}
+
+.quantityDivStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bbb;
+    padding: 0 10px;
+    flex: 1;
+}
+
+.increaseBtn {
+    margin-right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.decreaseBtn {
+    margin-left: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.itemDetailsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #bbb;
+    margin: 5px 0;
+}
+
+
+
+
+
+.itemImgStyle {
+    width: 120px;
+    height: 100px;
+    margin-left: -30px;
+    margin-bottom: -15px;
+}
+
+.showPrice {
+    display: none;
+}
+
+.removeBtn {
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-left: -10px;
+
+}
+
+.checkOutDiv {
+    margin-left: -20px;
+}
+
+.checkoutBtn {
+    background-color: blue;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* responsive styles*/
+
+@media(max-width:700px) {
+
+
+    .topTitleDiv {
+        display: none
+    }
+
+    .itemImgStyle {
+        width: 80px;
+        height: 80px;
+        margin-left: -10px;
+    }
+
+    .quantityDivStyle {
+        border: none;
+        padding: 0;
+    }
+}
+
+@media(max-width:650px) {
+
+    .showPrice {
+        display: block;
+        margin-bottom: -15px;
+        margin-top: -15px
+    }
+
+    .hidePrice {
+        display: none;
+    }
+
+    .increaseBtn {
+        font-size: 25px;
+    }
+
+    .removeBtn {
+        background-color: red;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        padding: 4px 10px;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: normal
+    }
+}
+
+@media(max-width:500px) {
+
+    .itemImgStyle {
+        width: 60px;
+        height: 60px;
+
+    }
+}
+
+@media(max-width:320px) {
+    .itemDetailsWrapper {
+
+        padding: 10px 15px;
+    }
+}

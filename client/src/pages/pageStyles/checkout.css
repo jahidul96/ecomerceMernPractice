@@ -1,0 +1,100 @@
+.chechoutContainer {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.chechoutContainer>h4 {
+    text-align: center;
+}
+
+.checkPrice {
+    margin-top: -15px;
+}
+
+.checkinputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upInputDiv {
+    margin: 20px 0;
+}
+
+.checkinput {
+    outline: none;
+    padding: 8px 10px;
+}
+
+.upInputDiv>input:first-child {
+    margin-right: 8px;
+}
+
+.downInputDiv>input:first-child {
+    margin-right: 8px;
+}
+
+.paymentBtn {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #26a731;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.complitationDiv {
+    width: 100%;
+    height: 100%;
+    background-color: #5F7161;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.complitationDiv>p {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+@media(max-width: 400px) {
+    .chechoutContainer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .paymentBtn {
+        margin-top: 15px;
+
+        font-size: 14px;
+        color: #fff;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+
+    .checkinputContainer {
+        display: block
+    }
+
+    .smallDeviceInput {
+        width: 80%;
+        margin-bottom: 8px;
+    }
+
+    .smallDeviceDeatils {
+        width: 80%;
+    }
+}

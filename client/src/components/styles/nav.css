@@ -1,0 +1,190 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+
+}
+
+.titleDiv {
+    flex: 2;
+}
+
+.inputDiv {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+}
+
+.inputDiv>input {
+    width: 100%;
+    outline: none;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.searchBtn {
+    outline: none;
+    height: 34px;
+    border: none;
+    background-color: red;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.rightDiv {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.menuBar {
+    display: none;
+}
+
+.cartShow {
+    display: none;
+}
+
+.showSearchBox {
+    display: none;
+}
+
+.smallScreenInputStyle {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.menuBtn {
+    background-color: red;
+    outline: none;
+    height: 33px;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+.smallScreenInput {
+    width: 70%;
+    outline: none;
+    height: 33px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+
+.smallScreenBtn {
+    outline: none;
+    height: 33px;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+@media(max-width:700px) {
+    .inputDiv {
+        flex: 6;
+        margin-left: 40px;
+
+    }
+}
+
+@media(max-width:600px) {
+    /* .inputDiv {
+        display: none;
+
+    } */
+
+    .rightDiv {
+        display: none;
+    }
+
+
+
+    .cartShow {
+        display: block;
+        position: fixed;
+        top: 150px;
+        right: 0;
+        background-color: #333;
+        width: 70px;
+        height: 50px;
+
+    }
+
+    .sScreenShow {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:550px) {
+    .inputDiv {
+        display: none;
+
+    }
+
+    .menuBar {
+        display: block;
+    }
+
+    .showSearchBox {
+        display: block;
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: red;
+    }
+}
+
+@media(max-width:360px) {
+    .smallScreenInput {
+        width: 60%;
+        outline: none;
+        height: 33px;
+        border: none;
+        padding-left: 10px;
+        border-radius: 5px;
+
+    }
+
+    .smallScreenBtn {
+        outline: none;
+        height: 33px;
+        border: none;
+        padding: 0 10px;
+        color: #fff;
+        margin-left: 30px;
+    }
+
+
+}
